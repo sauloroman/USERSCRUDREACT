@@ -1,0 +1,20 @@
+@media ( min-width: 764px ) {
+      .user__grid {
+            grid-template-columns: repeat(2, 1fr);
+      }
+
+      .header {
+            flex-direction: row;
+            justify-content: space-between;
+      }
+}
+
+@media ( min-width: 990px ) {
+      .user__grid {
+            grid-template-columns: repeat(3, 1fr);
+      }
+
+      .user__card {
+            width: 100%;
+      }
+}
