@@ -9,3 +9,8 @@ You can check its functionality on:
 ```
 https://userscrudroman.netlify.app/
 ```
+
+<h2>Graphical Interface</h2>
+<hr> <br />
+
+<img src="./assets/img/CRUD.png" />
