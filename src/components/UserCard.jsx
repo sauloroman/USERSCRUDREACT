@@ -1,6 +1,5 @@
 const UserCard = ({
       setPop,
-      setPopId,
       onShowModal,
       setTargetUser, 
       user }) => {
