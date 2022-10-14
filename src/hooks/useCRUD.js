@@ -7,22 +7,22 @@ const useCRUD = () => {
       const [targetUser, setTargetUser] = useState({});
 
       const onGetUsers = () => {
-            axios.get('https://users-crud1.herokuapp.com/users/')
+            axios.get('http://144.126.218.162:9000/users/')
                   .then( res => setUsers( res.data ) );
       }
 
       const onNewUser = newUser => {
-            axios.post('https://users-crud1.herokuapp.com/users/', newUser )
+            axios.post('http://144.126.218.162:9000/users/', newUser )
                   .then( () => onGetUsers() );
       } 
 
       const onDeleteUser = id => {
-            axios.delete(`https://users-crud1.herokuapp.com/users/${id}/`)
+            axios.delete(`http://144.126.218.162:9000/users/${id}/`)
                   .then( () => onGetUsers() )
       }
 
       const onEditUser = (id, user) => {
-            axios.put(`https://users-crud1.herokuapp.com/users/${id}/`, user )
+            axios.put(`http://144.126.218.162:9000/users/${id}/`, user )
                   .then( () => onGetUsers() )
       }
 
